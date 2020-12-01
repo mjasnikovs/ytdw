@@ -56,7 +56,7 @@ module.exports = async (videoUrl, audio) => {
 		`ffmpeg -i ${videoTemp} -vcodec dnxhd -acodec pcm_s16le -s 1920x1080 -profile:v dnxhr_hq -r 30000/1001 -pix_fmt yuv422p -f mov ${movieTemp}`
 	)
 
-	const title = videoInfo.playerResponse.videoDetails.title.replace(/[^a-zA-Z0-9]/g, '')
+	const title = videoInfo.videoDetails.title.replace(/[^a-zA-Z0-9]/g, '')
 	const finalFile = path.resolve(__dirname, `./videoFiles/${title}.mov`)
 
 	const finalFileExists = await fileExists(finalFile)

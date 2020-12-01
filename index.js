@@ -5,6 +5,8 @@ if (typeof url === 'undefined') {
 	throw new Error('YouTube url undefined')
 }
 
-videoDownload(url, audio === 'true').catch(err => {
+videoDownload(url, audio === 'true')
+.then(process.exit)
+.catch(err => {
 	throw err
 })
