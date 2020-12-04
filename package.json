@@ -11,12 +11,8 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-<<<<<<< HEAD
-        "ytdl-core": "4.1.0"
-=======
         "scpp": "1.0.5",
         "ytdl-core": "4.1.2"
->>>>>>> 7eedfe9429fc1ebca543eb2b8153704d23537d0b
     },
     "devDependencies": {
         "eslint": "5.16.0",

@@ -24,6 +24,7 @@ sync(
 				videos.map(val => {
 					return (video => {
 						return cbS => {
+							console.log(video)
 							const child = spawn('node', [PARSER, video, false])
 							let out = ''
 							let err = ''
